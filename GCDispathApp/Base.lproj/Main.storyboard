@@ -54,9 +54,18 @@
                                     <constraint firstAttribute="height" constant="414" id="A0L-zb-b2m"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="zNm-2J-zPM">
+                                <rect key="frame" x="182" y="270" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="29Q-ql-JwU"/>
+                                    <constraint firstAttribute="width" constant="50" id="Qg9-h3-UQU"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="zNm-2J-zPM" firstAttribute="centerY" secondItem="qXz-wh-War" secondAttribute="centerY" id="8IW-7P-i6t"/>
+                            <constraint firstItem="zNm-2J-zPM" firstAttribute="centerX" secondItem="qXz-wh-War" secondAttribute="centerX" id="GiG-FW-L3N"/>
                             <constraint firstItem="qXz-wh-War" firstAttribute="width" secondItem="P21-Op-e7F" secondAttribute="width" id="mCC-JY-Nxd"/>
                             <constraint firstItem="qXz-wh-War" firstAttribute="top" secondItem="P21-Op-e7F" secondAttribute="top" id="w2t-XH-WuC"/>
                             <constraint firstItem="qXz-wh-War" firstAttribute="centerX" secondItem="P21-Op-e7F" secondAttribute="centerX" id="zDZ-Vu-Nvt"/>
@@ -64,6 +73,10 @@
                         <viewLayoutGuide key="safeArea" id="P21-Op-e7F"/>
                     </view>
                     <navigationItem key="navigationItem" id="7Bb-mC-MRZ"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="zNm-2J-zPM" id="rvR-hx-OSR"/>
+                        <outlet property="imageView" destination="qXz-wh-War" id="g8M-dN-bXI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22G-Wv-ug1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
